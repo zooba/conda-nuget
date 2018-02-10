@@ -1,0 +1,47 @@
+// Include the manifest file that indicates we support all
+// current versions of Windows.
+#include <winuser.h>
+#include <winver.h>
+
+1 RT_MANIFEST "conda.manifest"
+
+1 ICON DISCARDABLE "conda.ico" 
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION CONDA_VERSION_NUMBER
+ PRODUCTVERSION CONDA_VERSION_NUMBER
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS VS_FF_DEBUG
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS VOS__WINDOWS32
+ FILETYPE VFT_APP
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "CompanyName", "Anaconda Inc.\0"
+            VALUE "FileDescription", "conda\0"
+            VALUE "FileVersion", CONDA_VERSION "\0"
+            VALUE "InternalName", "conda\0"
+            VALUE "LegalCopyright", "Copyright Anaconda Inc.\0"
+            VALUE "OriginalFilename", "conda.exe\0"
+            VALUE "ProductName", "conda\0"
+            VALUE "ProductVersion", CONDA_VERSION "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END

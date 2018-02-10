@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>python-conda</id>
+    <title>Conda</title>
+    <version>0.0.0.0</version>
+    <authors>Anaconda Inc.</authors>
+    <licenseUrl>https://github.com/conda/conda</licenseUrl>
+    <projectUrl>https://github.com/conda/conda</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Installs standalone conda for use in build scenarios.</description>
+    <iconUrl>https://www.anaconda.com/wp-content/themes/anaconda/images/favicons/favicon.ico</iconUrl>
+    <tags>python, anaconda, conda</tags>
+  </metadata>
+  <files>
+    <file src="tools\conda-meta\*" target="tools\conda-meta" />
+    <file src="tools\DLLs\*" target="tools\DLLs" />
+    <file src="tools\Lib\**\*" target="tools\Lib" />
+    <file src="tools\conda.exe" target="tools\conda.exe" />
+    <file src="tools\conda._pth" target="tools\conda._pth" />
+    <file src="tools\condarc" target="tools\condarc" />
+    <file src="tools\python36.dll" target="tools\python36.dll" />
+    <file src="tools\vcruntime140.dll" target="tools\vcruntime140.dll" />
+  </files>
+</package>
