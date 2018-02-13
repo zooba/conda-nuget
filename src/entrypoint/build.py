@@ -1,7 +1,6 @@
 import conda
 import os.path
 import sys
-from pyfindvs import findwithall
 from pyfindvs.msbuildcompiler import MSBuildCompiler
 
 compiler = MSBuildCompiler()

@@ -4,7 +4,7 @@
     <id>python-conda</id>
     <title>Conda</title>
     <version>0.0.0.0</version>
-    <authors>Anaconda Inc.</authors>
+    <authors>Steve Dower</authors>
     <licenseUrl>https://github.com/conda/conda</licenseUrl>
     <projectUrl>https://github.com/conda/conda</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
