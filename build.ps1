@@ -52,6 +52,9 @@ always_yes: True
 
 $ver = if ((pythonx86\tools\conda.exe -V) -match '\w+ ([\d\.]+)') { $Matches[1] } else { '0.0.0.0' }
 
+# Add the revision version for our package
+$ver = if (($ver + '.1.0.0.0') -match '(\d+\.\d+\.\d+\.\d+)') { $Matches[1] } else { $ver }
+
 & $nuget pack "$root\src\nuget\conda.nuspec" -BasePath "$workdir\pythonx86" -OutputDirectory $outdir -Version $ver -NoPackageAnalysis -NonInteractive
 
 popd
